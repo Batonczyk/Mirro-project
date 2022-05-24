@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.menu {
+    margin: 0 0 0 auto;
+}
+
+.menu__inner {
+    display: flex;
+}
+
+.menu__inner-list+.menu__inner-list {
+    margin-left: 20px;
+}
+
+.cart {
+    background-color: #3A5F56;
+    border-radius: 6px;
+    color: #fefefe;
+    padding: 10px 45px;
+    margin-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 14px;
+    left: 18px;
+    background-image: url(../images/shop.png);
+}
+
+.cart::after {
+    content: '';
+    position: absolute;
+    color: #3A5F56;
+    top: 12px;
+    right: 18px;
+    width: 19px;
+    height: 18px;
+    background-color: #fefefe;
+    border-radius: 50%;
+    padding-left: 8px;
+}
+
+.mirro {
+    margin: 0 0 100px 0;
+    background-image: url(../images/Rectangle.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mirro__inner {
+    display: flex;
+    align-items: center;
+    gap: 82px;
+}
+
+.mirro__content {
+    width: 50%;
+}
+
+.mirro__title {
+    max-width: 477px;
+    margin: 0 0 11px 0;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57px;
+    color: #3A5F56;
+}
+
+.mirro__text {
+    width: 534px;
+    padding: 0 0 27px 0;
+}
+
+.read__btn {
+    padding: 10px 20px;
+    background-color: #3A5F56;
+    color: #fefefe;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.mirro__img {
+    max-width: 50%;
+    height: auto;
+    padding: 100px 0
+}
+
+.services__inner {}
+
+.services__top {
+    width: 580px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services__img {
+    margin: 0 0 15px 0;
+}
+
+.services__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.services__text {
+    padding-top: 11px;
+    margin: 0 0 47px 0;
+}
+.services__catalog-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 16px;
+}
+.services__catalog {
+    background: #3A5F56;
+}
+
+.services__img-catalog {}
+
+.catalog__title {}
+
+.catalog__text {}
+
+.catolog__link {}
